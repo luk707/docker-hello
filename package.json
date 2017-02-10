@@ -1,0 +1,17 @@
+{
+  "description": "Simple test docker app",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luk707/docker-hello"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "prog-quote": "^2.0.0",
+    "pug": "^2.0.0-beta11",
+    "redis": "^2.6.5"
+  }
+}
