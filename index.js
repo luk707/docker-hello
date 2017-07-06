@@ -4,7 +4,14 @@ var redis = require('redis');
 var os = require('os');
 
 var app = express();
-var client = redis.createClient('redis://redis/');
+
+const REDIS_PORT = process.env.REDIS_PORT || 6379;
+const REDIS_HOST = process.env.REDIS_HOST || 'redis';
+
+var client = redis.createClient(
+    REDIS_PORT,
+    REDIS_HOST
+)
 
 app.set('view engine', 'pug');
 
